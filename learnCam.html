@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>CameraOpening</title>
+<script type="text/javascript">
+function capturePhoto()
+{
+navigator.camera.getPicture( cameraSuccess, cameraError, [ cameraOptions ] );
+}
+</script>
+</head>
+<body>
+<form>
+Take Pic<br>
+<button onclick="capturePhoto();">Capture Photo</button> <br>
+<input type="submit" value="UPLOAD">
+</form>
+</body>
+</html>
